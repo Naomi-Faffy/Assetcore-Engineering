@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assetcore Engineering - Luxury Engineering. Sustainable Impact.</title>
+    <meta name="description" content="Premier engineering consultancy specializing in luxury infrastructure development and sustainable impact solutions.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="aos.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo-white.svg" alt="Assetcore Engineering" class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#vision" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="assets/hero-video.mp4" type="video/mp4">
+                <!-- Fallback image if video doesn't load -->
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="300">
+                Assetcore Engineering
+            </h1>
+            <p class="hero-tagline" data-aos="fade-up" data-aos-delay="500">
+                Luxury Engineering. Sustainable Impact.
+            </p>
+            <div class="hero-actions" data-aos="fade-up" data-aos-delay="700">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1000">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="vision-mission" id="vision">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">About Assetcore</span>
+                <h2 class="section-title">Engineering Excellence</h2>
+            </div>
+            <div class="vision-mission-content">
+                <div class="vision-card" data-aos="fade-right" data-aos-delay="200">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To be Zimbabwe's premier engineering consultancy, setting the standard for luxury infrastructure development while creating sustainable impact for communities and the environment.</p>
+                </div>
+                <div class="mission-card" data-aos="fade-left" data-aos-delay="400">
+                    <div class="card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>We deliver exceptional engineering solutions through innovative design, meticulous project management, and unwavering commitment to quality, sustainability, and client satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="core-values" id="values">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">What Drives Us</span>
+                <h2 class="section-title">Core Values</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="value-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h4>Excellence</h4>
+                    <p>Uncompromising quality in every project we undertake</p>
+                </div>
+                <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h4>Sustainability</h4>
+                    <p>Environmental responsibility drives our design decisions</p>
+                </div>
+                <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h4>Innovation</h4>
+                    <p>Cutting-edge solutions for tomorrow's challenges</p>
+                </div>
+                <div class="value-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h4>Integrity</h4>
+                    <p>Transparent, honest relationships with all stakeholders</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Featured Work</span>
+                <h2 class="section-title">Distinguished Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="assets/parliament-zimbabwe.jpg" alt="Parliament of Zimbabwe">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h4>Parliament of Zimbabwe</h4>
+                                <p>Structural design and supervision of this prestigious government facility</p>
+                                <span class="project-role">Design & Supervision</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="assets/manicaland-hospital.jpg" alt="Manicaland Hospital">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h4>Manicaland Hospital</h4>
+                                <p>Comprehensive healthcare infrastructure development and management</p>
+                                <span class="project-role">Project Management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="assets/nust-university.jpg" alt="NUST University">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h4>NUST University</h4>
+                                <p>Educational facility design with focus on sustainable architecture</p>
+                                <span class="project-role">Design & Consultancy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="assets/infrastructure-project.jpg" alt="Infrastructure Development">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h4>Urban Infrastructure</h4>
+                                <p>Modern urban development with integrated sustainability features</p>
+                                <span class="project-role">Full Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Bio Section -->
+    <section class="founder-bio" id="founder">
+        <div class="container">
+            <div class="bio-content">
+                <div class="bio-image" data-aos="fade-right">
+                    <img src="assets/tafadzwa-muchemwa.jpg" alt="Tafadzwa Muchemwa">
+                </div>
+                <div class="bio-text" data-aos="fade-left" data-aos-delay="200">
+                    <span class="bio-subtitle">Founder & Principal Engineer</span>
+                    <h3>Tafadzwa Muchemwa</h3>
+                    <p>With over two decades of engineering excellence, Tafadzwa has established Assetcore as Zimbabwe's premier luxury engineering consultancy. His vision combines technical precision with sustainable innovation, delivering projects that stand as monuments to engineering artistry.</p>
+                    <blockquote>
+                        "Excellence is not a destination, but a continuous journey of innovation and dedication to our craft."
+                    </blockquote>
+                    <div class="partner-logos">
+                        <img src="assets/undp-logo.png" alt="UNDP Partner">
+                        <img src="assets/unesco-logo.png" alt="UNESCO Partner">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Meet Our Experts</span>
+                <h2 class="section-title">Distinguished Team</h2>
+            </div>
+            <div class="team-scroll">
+                <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-image">
+                        <img src="assets/team-member-1.jpg" alt="Team Member">
+                    </div>
+                    <div class="team-info">
+                        <h4>Sarah Chen</h4>
+                        <p>Senior Structural Engineer</p>
+                    </div>
+                </div>
+                <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-image">
+                        <img src="assets/team-member-2.jpg" alt="Team Member">
+                    </div>
+                    <div class="team-info">
+                        <h4>Michael Roberts</h4>
+                        <p>Project Director</p>
+                    </div>
+                </div>
+                <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-image">
+                        <img src="assets/team-member-3.jpg" alt="Team Member">
+                    </div>
+                    <div class="team-info">
+                        <h4>Dr. Priya Patel</h4>
+                        <p>Environmental Engineer</p>
+                    </div>
+                </div>
+                <div class="team-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="team-image">
+                        <img src="assets/team-member-4.jpg" alt="Team Member">
+                    </div>
+                    <div class="team-info">
+                        <h4>James Wilson</h4>
+                        <p>Design Coordinator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Our Expertise</span>
+                <h2 class="section-title">Comprehensive Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h4>Civil Engineering</h4>
+                    <p>Infrastructure design and development with precision and innovation</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h4>Structural Design</h4>
+                    <p>Advanced structural solutions for complex architectural challenges</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h4>Project Management</h4>
+                    <p>End-to-end project oversight ensuring timely and quality delivery</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h4>Environmental Engineering</h4>
+                    <p>Sustainable solutions that harmonize development with nature</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h4>Infrastructure Development</h4>
+                    <p>Large-scale infrastructure projects that shape communities</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h4>Consultancy</h4>
+                    <p>Expert advisory services for complex engineering challenges</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="quote-background">
+            <img src="assets/project-background.jpg" alt="Project Background">
+            <div class="quote-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="quote-content" data-aos="fade-up">
+                <blockquote>
+                    "The secret to success is to know something nobody else knows."
+                </blockquote>
+                <cite>- Lily Tomlin</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Let's Connect</span>
+                <h2 class="section-title">Start Your Project</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+263 78 428 8310</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@assetcore.co.zw</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Website</h4>
+                            <p>www.assetcore.co.zw</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Office</h4>
+                            <p>Harare, Zimbabwe<br>Building Excellence District</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" data-aos="fade-left" data-aos-delay="200">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Full Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="company" name="company">
+                        <label for="company">Company</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Project Details</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo-gold.svg" alt="Assetcore Engineering" class="footer-logo">
+                    <p>Luxury Engineering. Sustainable Impact.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#vision">About Us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#team">Team</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Civil Engineering</a></li>
+                            <li><a href="#services">Project Management</a></li>
+                            <li><a href="#services">Consultancy</a></li>
+                            <li><a href="assets/company-profile.pdf" target="_blank">Company Profile</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="tel:+263784288310">+263 78 428 8310</a></li>
+                            <li><a href="mailto:info@assetcore.co.zw">info@assetcore.co.zw</a></li>
+                            <li><a href="https://www.assetcore.co.zw" target="_blank">www.assetcore.co.zw</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Assetcore Engineering. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

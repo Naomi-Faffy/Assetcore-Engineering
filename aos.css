@@ -1,0 +1,87 @@
+/*! AOS - Animate On Scroll Library - Simplified Version */
+
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: none;
+}
+
+[data-aos="fade-up"] {
+  transform: translate3d(0, 50px, 0);
+}
+
+[data-aos="fade-down"] {
+  transform: translate3d(0, -50px, 0);
+}
+
+[data-aos="fade-right"] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+[data-aos="fade-left"] {
+  transform: translate3d(50px, 0, 0);
+}
+
+[data-aos="fade-up-right"] {
+  transform: translate3d(-50px, 50px, 0);
+}
+
+[data-aos="fade-up-left"] {
+  transform: translate3d(50px, 50px, 0);
+}
+
+[data-aos="fade-down-right"] {
+  transform: translate3d(-50px, -50px, 0);
+}
+
+[data-aos="fade-down-left"] {
+  transform: translate3d(50px, -50px, 0);
+}
+
+[data-aos="zoom-in"] {
+  transform: scale(0.6);
+}
+
+[data-aos="zoom-out"] {
+  transform: scale(1.2);
+}
+
+[data-aos="flip-left"] {
+  transform: perspective(2500px) rotateY(-100deg);
+}
+
+[data-aos="flip-right"] {
+  transform: perspective(2500px) rotateY(100deg);
+}
+
+[data-aos="flip-up"] {
+  transform: perspective(2500px) rotateX(-100deg);
+}
+
+[data-aos="flip-down"] {
+  transform: perspective(2500px) rotateX(100deg);
+}
+
+/* Responsive animations */
+@media screen and (max-width: 768px) {
+  [data-aos-disable="mobile"] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  [data-aos] {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
