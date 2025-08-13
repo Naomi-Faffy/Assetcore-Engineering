@@ -3,83 +3,498 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assetcore Engineering</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Exquisite Cars - Drive Prestige. Live Exquisite.</title>
+    <meta name="description" content="Experience the world's most exclusive luxury automobiles. Premium collection of Ferrari, Lamborghini, Rolls Royce, and more elite vehicles.">
+    <meta name="keywords" content="luxury cars, exotic cars, Ferrari, Lamborghini, Rolls Royce, premium automobiles, exclusive vehicles">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- HEADER / HERO -->
-    <header class="hero">
-        <nav>
-            <div class="logo">
-                <img src="logo.png" alt="Assetcore Engineering Logo">
+
+    <!-- WhatsApp Floating Chat -->
+    <div class="whatsapp-chat">
+        <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp Chat">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.jpg" alt="Exquisite Cars" />
             </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collection">Collection</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="hero-video.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        
         <div class="hero-content">
-            <h1>Building the Future, Engineering Excellence</h1>
-            <p>Innovative solutions in engineering, construction, and project management.</p>
-            <a href="#contact" class="btn">Get in Touch</a>
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="hero-line-1">Drive Prestige.</span>
+                    <span class="hero-line-2">Live Exquisite.</span>
+                </h1>
+                <p class="hero-subtitle">Experience the world's most exclusive collection of luxury automobiles</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="cta-button primary">Book a Viewing</a>
+                    <a href="#collection" class="cta-button secondary">Explore Fleet</a>
+                </div>
+            </div>
         </div>
-    </header>
-
-    <!-- ABOUT -->
-    <section id="about" class="about fade-in">
-        <h2>About Us</h2>
-        <p>At Assetcore Engineering, we provide world-class engineering solutions tailored to your needs. From structural design to large-scale construction, we deliver precision and quality in every project.</p>
-    </section>
-
-    <!-- SERVICES -->
-    <section id="services" class="services fade-in">
-        <h2>Our Services</h2>
-        <div class="service-container">
-            <div class="service-card">
-                <h3>Structural Design</h3>
-                <p>Innovative designs ensuring strength, safety, and sustainability.</p>
-            </div>
-            <div class="service-card">
-                <h3>Construction</h3>
-                <p>Expert construction services delivering projects on time and within budget.</p>
-            </div>
-            <div class="service-card">
-                <h3>Project Management</h3>
-                <p>Efficient and effective management from planning to completion.</p>
-            </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
         </div>
     </section>
 
-    <!-- PORTFOLIO -->
-    <section id="portfolio" class="portfolio fade-in">
-        <h2>Recent Projects</h2>
-        <div class="portfolio-gallery">
-            <img src="project1.jpg" alt="Project 1">
-            <img src="project2.jpg" alt="Project 2">
-            <img src="project3.jpg" alt="Project 3">
+    <!-- Elite Collection -->
+    <section id="collection" class="collection">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Current Inventory</h2>
+                <p class="section-subtitle">Fresh arrivals and premium vehicles available at Exquisite Cars</p>
+            </div>
+            
+            <div class="collection-grid">
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="aston-martin-db11.jpg" alt="2022 Aston Martin DB11" loading="lazy">
+                        <div class="car-overlay">
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-model">2022 Aston Martin DB11</h3>
+                        <p class="car-class">Sports Car Excellence</p>
+                        <div class="car-price">Available on Request</div>
+                        <button class="car-action">Schedule Test Drive</button>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="toyota-prado-vx-r.jpg" alt="2024 Toyota Land Cruiser Prado VX-R" loading="lazy">
+                        <div class="car-overlay">
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-model">2024 Toyota Land Cruiser Prado VX-R</h3>
+                        <p class="car-class">Luxury Mid-Size SUV</p>
+                        <div class="car-price">Available on Request</div>
+                        <button class="car-action">Schedule Test Drive</button>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="ford-ranger-raptor.jpg" alt="2023 Ford Ranger Raptor" loading="lazy">
+                        <div class="car-overlay">
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-model">2023 Ford Ranger Raptor</h3>
+                        <p class="car-class">Performance Off-Road</p>
+                        <div class="car-price">Available on Request</div>
+                        <button class="car-action">Schedule Test Drive</button>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="range-rover-hse.jpg" alt="2024 Range Rover HSE D350" loading="lazy">
+                        <div class="car-overlay">
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-model">2024 Range Rover HSE D350</h3>
+                        <p class="car-class">Luxury & Power</p>
+                        <div class="car-price">Available on Request</div>
+                        <button class="car-action">Schedule Test Drive</button>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="toyota-landcruiser-79.jpg" alt="2024 Toyota Land Cruiser 79 Series" loading="lazy">
+                        <div class="car-overlay">
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-model">2024 Toyota Land Cruiser 79 Series</h3>
+                        <p class="car-class">Ultimate Off-Road</p>
+                        <div class="car-price">Available on Request</div>
+                        <button class="car-action">Schedule Test Drive</button>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="mercedes-g63-amg.jpg" alt="2024 Mercedes-Benz G63 AMG" loading="lazy">
+                        <div class="car-overlay">
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-model">2024 Mercedes-Benz G63 AMG</h3>
+                        <p class="car-class">Magno Black Edition</p>
+                        <div class="car-price">Available on Request</div>
+                        <button class="car-action">Schedule Test Drive</button>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="black-luxury-suv.jpg" alt="Luxury Performance SUV" loading="lazy">
+                        <div class="car-overlay">
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-model">Premium Luxury SUV</h3>
+                        <p class="car-class">Elite Performance</p>
+                        <div class="car-price">Available on Request</div>
+                        <button class="car-action">Schedule Test Drive</button>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="toyota-hilux-gr-sport.jpg" alt="2024 Toyota Hilux GR-Sport" loading="lazy">
+                        <div class="car-overlay">
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-model">2024 Toyota Hilux GR-Sport</h3>
+                        <p class="car-class">Rugged & Stylish</p>
+                        <div class="car-price">Available on Request</div>
+                        <button class="car-action">Schedule Test Drive</button>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="toyota-prado-white.jpg" alt="Toyota Land Cruiser Prado" loading="lazy">
+                        <div class="car-overlay">
+                            <button class="view-details">View Details</button>
+                        </div>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-model">Toyota Land Cruiser Prado</h3>
+                        <p class="car-class">Versatile Luxury</p>
+                        <div class="car-price">Available on Request</div>
+                        <button class="car-action">Schedule Test Drive</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="contact fade-in">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+    <!-- Why Choose Exquisite Cars -->
+    <section id="services" class="services">
+        <div class="services-overlay">
+            <div class="services-header">
+                <h2 class="services-main-title">WHY CHOOSE EXQUISITE CARS</h2>
+                <p class="services-subtitle">Unparalleled service for the most discerning clients</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="glass-card">
+                    <div class="glass-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="glass-card-title">EXCLUSIVE INVENTORY</h3>
+                    <p class="glass-card-description">Access to the world's rarest and most sought-after luxury vehicles. Our curated collection features limited editions and bespoke models unavailable elsewhere.</p>
+                </div>
+                
+                <div class="glass-card">
+                    <div class="glass-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3 class="glass-card-title">TAILORED SERVICES</h3>
+                    <p class="glass-card-description">Private test drives, personalized consultations, and white-glove delivery. Experience our chauffeur services and VIP treatment tailored to your preferences.</p>
+                </div>
+                
+                <div class="glass-card">
+                    <div class="glass-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="glass-card-title">GLOBAL CLIENTELE</h3>
+                    <p class="glass-card-description">Trusted by elite clients worldwide. Our international network ensures seamless service whether you're in New York, Monaco, Dubai, or Tokyo.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2025 Assetcore Engineering. All rights reserved.</p>
+
+
+    <!-- Trust & Prestige -->
+    <section class="trust">
+        <div class="trust-overlay">
+            <div class="trust-header">
+                <h2 class="trust-main-title">TRUSTED EXCELLENCE</h2>
+                <p class="trust-subtitle">Endorsed by the world's most prestigious publications and elite clientele</p>
+            </div>
+            
+            <!-- Media Partners Glass Cards -->
+            <div class="media-partners-glass">
+                <div class="partner-glass-card">
+                    <div class="partner-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="partner-title">FORBES</h3>
+                    <p class="partner-description">"Setting the standard for luxury automotive excellence"</p>
+                </div>
+                
+                <div class="partner-glass-card">
+                    <div class="partner-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3 class="partner-title">BLOOMBERG</h3>
+                    <p class="partner-description">"The pinnacle of premium dealership experience"</p>
+                </div>
+                
+                <div class="partner-glass-card">
+                    <div class="partner-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="partner-title">ROBB REPORT</h3>
+                    <p class="partner-description">"Curating the world's most exceptional vehicles"</p>
+                </div>
+            </div>
+            
+            <!-- Testimonials Glass Cards -->
+            <div class="testimonials-glass-grid">
+                <div class="testimonial-glass-card">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"Exquisite Cars transformed my vision into reality. The attention to detail and personalized service exceeded my expectations. Truly a world-class experience."</p>
+                    <div class="testimonial-author">
+                        <strong>Alexander Rothschild</strong>
+                        <span>Private Equity Executive</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-glass-card">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"From selection to delivery, every moment was flawless. The team's expertise and dedication to excellence is unmatched in the luxury automotive industry."</p>
+                    <div class="testimonial-author">
+                        <strong>Victoria Pemberton</strong>
+                        <span>Luxury Real Estate Developer</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-glass-card">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">"Having worked with many luxury dealers worldwide, Exquisite Cars stands alone. Their curated collection and white-glove service are simply extraordinary."</p>
+                    <div class="testimonial-author">
+                        <strong>Marcus Wellington</strong>
+                        <span>Investment Banker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Glass Morphism -->
+    <section id="contact" class="contact">
+        <div class="contact-overlay">
+            <div class="contact-header">
+                <h2 class="contact-main-title">BEGIN YOUR JOURNEY</h2>
+                <p class="contact-subtitle">Experience the pinnacle of automotive luxury with personalized service</p>
+            </div>
+            
+            <div class="contact-glass-grid">
+                <!-- Contact Information Glass Card -->
+                <div class="contact-info-glass">
+                    <div class="contact-glass-header">
+                        <div class="contact-icon">
+                            <i class="fas fa-concierge-bell"></i>
+                        </div>
+                        <h3 class="contact-glass-title">LUXURY CONCIERGE SERVICE</h3>
+                        <p class="contact-glass-description">Our dedicated team provides white-glove service tailored to your discerning preferences</p>
+                    </div>
+                    
+                    <div class="contact-details-glass">
+                        <div class="contact-item-glass">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <span class="contact-label">Exclusive Hotline</span>
+                                <span class="contact-value">+1 (555) 123-LUXURY</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item-glass">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <span class="contact-label">Private Email</span>
+                                <span class="contact-value">concierge@exquisitecars.com</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item-glass">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <span class="contact-label">Premier Location</span>
+                                <span class="contact-value">Beverly Hills, California</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item-glass">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-item-content">
+                                <span class="contact-label">Available Hours</span>
+                                <span class="contact-value">Mon-Sat: 9AM-7PM | Sun: By Appointment</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links-glass">
+                        <a href="#" aria-label="Instagram" class="social-glass-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="social-glass-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="social-glass-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="social-glass-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Contact Form Glass Card -->
+                <div class="contact-form-glass">
+                    <div class="form-glass-header">
+                        <div class="form-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <h3 class="form-glass-title">PRIVATE CONSULTATION REQUEST</h3>
+                        <p class="form-glass-description">Share your vision and we'll curate the perfect luxury automotive experience</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group-glass">
+                            <div class="input-glass-container">
+                                <i class="fas fa-user input-icon"></i>
+                                <input type="text" id="name" name="name" placeholder="Full Name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group-glass">
+                            <div class="input-glass-container">
+                                <i class="fas fa-envelope input-icon"></i>
+                                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group-glass">
+                            <div class="input-glass-container">
+                                <i class="fas fa-car input-icon"></i>
+                                <select id="interest" name="interest" required>
+                                    <option value="">Service Interest</option>
+                                    <option value="purchase">Luxury Vehicle Purchase</option>
+                                    <option value="lease">Premium Lease Program</option>
+                                    <option value="consultation">Private Consultation</option>
+                                    <option value="testdrive">Exclusive Test Drive Experience</option>
+                                    <option value="collection">Private Collection Viewing</option>
+                                    <option value="customization">Bespoke Customization</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group-glass">
+                            <div class="input-glass-container">
+                                <i class="fas fa-comment-dots input-icon"></i>
+                                <textarea id="message" name="message" placeholder="Tell us about your luxury automotive vision..." rows="4"></textarea>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="glass-submit-button">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>SUBMIT EXCLUSIVE INQUIRY</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.jpg" alt="Exquisite Cars" style="height: 30px;" />
+                </div>
+                
+                <nav class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#collection">Collection</a>
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Exquisite Cars. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
