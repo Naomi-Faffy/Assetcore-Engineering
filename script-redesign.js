@@ -276,12 +276,12 @@ function updateLabel(input) {
         label.style.top = '-0.5rem';
         label.style.left = '1rem';
         label.style.fontSize = '0.8rem';
-        label.style.color = 'var(--gold)';
+        label.style.color = 'var(--assetcore-green)';
     } else {
         label.style.top = '1.2rem';
         label.style.left = '1.2rem';
         label.style.fontSize = '1rem';
-        label.style.color = 'var(--gray-medium)';
+        label.style.color = 'var(--urban-silver)';
     }
 }
 
@@ -316,9 +316,9 @@ function showNotification(message, type = 'info') {
     
     // Styles
     const colors = {
-        success: { bg: 'var(--emerald)', color: 'white' },
+        success: { bg: 'var(--assetcore-green)', color: 'white' },
         error: { bg: '#dc3545', color: 'white' },
-        info: { bg: 'var(--gold)', color: 'var(--primary-black)' }
+        info: { bg: 'var(--assetcore-green)', color: 'var(--pure-white)' }
     };
     
     notification.style.cssText = `
@@ -595,8 +595,8 @@ function initScrollToTop() {
         right: 2rem;
         width: 50px;
         height: 50px;
-        background: var(--gold);
-        color: var(--primary-black);
+        background: var(--assetcore-green);
+        color: var(--pure-white);
         border: none;
         border-radius: 50%;
         font-size: 1.2rem;

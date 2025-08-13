@@ -1,15 +1,39 @@
-# Assets Guide for Assetcore Engineering Website
+# Assets Guide for Assetcore Engineering Website - Updated Branding
 
-This guide outlines all the media assets needed for the luxury landing page.
+This guide outlines all the media assets needed for the redesigned website using the actual Assetcore Engineering logo and brand colors.
 
-## 📐 Image Specifications
+## 🏗️ **NEW BRANDING SPECIFICATIONS**
 
-### Logo Files
-- **Format**: SVG preferred (scalable), PNG as fallback
-- **Variants**: 
-  - `logo-white.svg` - For dark backgrounds (navigation)
-  - `logo-gold.svg` - For light backgrounds (footer)
-- **Size**: Vector format preferred, minimum 200px width if raster
+### **Official Logo**
+The actual Assetcore Engineering logo features:
+- **Green construction crane** (#00A132)
+- **White and black buildings**
+- **Green circular swoosh element**  
+- **"ASSETCORE" text in green**
+- **"ENGINEERING" text below**
+- **Professional construction/engineering aesthetic**
+
+### **Brand Color Palette**
+| Color Name | HEX Code | Usage |
+|------------|----------|-------|
+| **Assetcore Green** | `#00A132` | Brand Identity, Headings, CTAs |
+| **Pure White** | `#FFFFFF` | Backgrounds, Icons |
+| **Structural Black** | `#1A1A1A` | Text, Borders |
+| **Urban Silver** | `#C4C4C4` | Accents, Shadows |
+
+## 📐 **Logo File Requirements**
+
+### **Logo Variants Needed**
+- **`assetcore-logo.png`** - Original logo on transparent/dark background (for hero)
+- **`assetcore-logo-white.png`** - White version for dark navigation background
+- **`assetcore-logo-green.png`** - Green version for light footer background
+- **`assetcore-logo.svg`** - Vector version (if available) for scalability
+
+### **Logo Specifications**
+- **Format**: PNG primary, SVG if available
+- **Resolution**: Minimum 300px width for web
+- **Background**: Transparent PNG preferred
+- **Quality**: High-resolution for sharp display on all devices
 
 ### Hero Section
 - **Video**: `hero-video.mp4`
