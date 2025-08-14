@@ -3,39 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exquisite Cars - Drive Prestige. Live Exquisite.</title>
-    <meta name="description" content="Experience the world's most exclusive luxury automobiles. Premium collection of Ferrari, Lamborghini, Rolls Royce, and more elite vehicles.">
-    <meta name="keywords" content="luxury cars, exotic cars, Ferrari, Lamborghini, Rolls Royce, premium automobiles, exclusive vehicles">
+    <title>Assetcore Engineering - Engineering Prestige. Delivering Excellence.</title>
+    <meta name="description" content="Premium engineering solutions with uncompromising excellence. Structural design, project supervision, and innovative engineering services.">
+    <meta name="keywords" content="engineering, structural design, project supervision, premium engineering, luxury engineering services">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-
-    <!-- WhatsApp Floating Chat -->
-    <div class="whatsapp-chat">
-        <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp Chat">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    </div>
-
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="logo.jpg" alt="Exquisite Cars" />
+                <img src="logo.png" alt="Assetcore Engineering" />
+                <span class="logo-text">Assetcore Engineering</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#collection">Collection</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -50,23 +42,25 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-video-container">
-            <video autoplay muted loop playsinline class="hero-video">
-                <source src="hero-video.mp4" type="video/mp4">
+        <div class="hero-background">
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="large.mp4" type="video/mp4">
+                <source src="https://player.vimeo.com/external/434045526.sd.mp4?s=c27eecc69a27dbc4ff2b87d38afc35f1a9e7c02d&profile_id=139" type="video/mp4">
             </video>
+            <div class="hero-image-fallback"></div>
             <div class="hero-overlay"></div>
         </div>
         
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">
-                    <span class="hero-line-1">Drive Prestige.</span>
-                    <span class="hero-line-2">Live Exquisite.</span>
+                    <span class="hero-line-1">Engineering Prestige.</span>
+                    <span class="hero-line-2">Delivering Excellence.</span>
                 </h1>
-                <p class="hero-subtitle">Experience the world's most exclusive collection of luxury automobiles</p>
+                <p class="hero-subtitle">Crafting architectural marvels and engineering solutions that define the future of construction excellence</p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="cta-button primary">Book a Viewing</a>
-                    <a href="#collection" class="cta-button secondary">Explore Fleet</a>
+                    <a href="#contact" class="cta-button primary">Start Your Project</a>
+                    <a href="#projects" class="cta-button secondary">View Portfolio</a>
                 </div>
             </div>
         </div>
@@ -76,15 +70,430 @@
         </div>
     </section>
 
-    <!-- Elite Collection -->
-    <section id="collection" class="collection">
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects">
+        <div class="floating-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="section-glass-overlay"></div>
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Current Inventory</h2>
-                <p class="section-subtitle">Fresh arrivals and premium vehicles available at Exquisite Cars</p>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing our commitment to engineering excellence and architectural innovation</p>
             </div>
             
-            <div class="collection-grid">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Modern Office Complex" loading="lazy">
+                        <div class="project-overlay">
+                            <button class="view-details" data-project="project1">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Metropolitan Tower Complex</h3>
+                        <p class="project-description">Structural Design & Supervision</p>
+                        <button class="project-action" data-project="project1">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Luxury Residential" loading="lazy">
+                        <div class="project-overlay">
+                            <button class="view-details" data-project="project2">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Platinum Residences</h3>
+                        <p class="project-description">Luxury Residential Engineering</p>
+                        <button class="project-action" data-project="project2">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Industrial Complex" loading="lazy">
+                        <div class="project-overlay">
+                            <button class="view-details" data-project="project3">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Industrial Innovation Hub</h3>
+                        <p class="project-description">Advanced Structural Solutions</p>
+                        <button class="project-action" data-project="project3">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Bridge Engineering" loading="lazy">
+                        <div class="project-overlay">
+                            <button class="view-details" data-project="project4">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Skyline Bridge Project</h3>
+                        <p class="project-description">Infrastructure & Bridge Design</p>
+                        <button class="project-action" data-project="project4">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Corporate Headquarters" loading="lazy">
+                        <div class="project-overlay">
+                            <button class="view-details" data-project="project5">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Corporate Headquarters</h3>
+                        <p class="project-description">Commercial Engineering Excellence</p>
+                        <button class="project-action" data-project="project5">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Sustainable Building" loading="lazy">
+                        <div class="project-overlay">
+                            <button class="view-details" data-project="project6">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Green Innovation Center</h3>
+                        <p class="project-description">Sustainable Engineering Solutions</p>
+                        <button class="project-action" data-project="project6">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="vision-mission">
+        <div class="container">
+            <div class="vision-mission-content">
+                <div class="vision-section">
+                    <div class="vision-text">
+                        <h2 class="section-title">Our Vision</h2>
+                        <p class="vision-description">To be the world's most trusted engineering consultancy, setting new standards in structural innovation and architectural excellence while delivering projects that stand as monuments to human ingenuity.</p>
+                    </div>
+                </div>
+                <div class="mission-section">
+                    <div class="mission-text">
+                        <h2 class="section-title">Our Mission</h2>
+                        <p class="mission-description">We engineer the extraordinary through precision, innovation, and unwavering commitment to excellence. Every project we undertake is a testament to our dedication to pushing the boundaries of what's possible in modern engineering.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="core-values">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Values</h2>
+                <p class="section-subtitle">The principles that drive our engineering excellence</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h3 class="value-title">Precision</h3>
+                    <p class="value-description">Every calculation, every design, every detail executed with mathematical precision and engineering excellence.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="value-title">Innovation</h3>
+                    <p class="value-description">Pioneering cutting-edge solutions that redefine industry standards and architectural possibilities.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="value-title">Integrity</h3>
+                    <p class="value-description">Unwavering commitment to ethical practices, transparency, and delivering on our promises.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="value-title">Excellence</h3>
+                    <p class="value-description">Pursuing perfection in every project, setting benchmarks that inspire the industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="services-overlay">
+            <div class="services-header">
+                <h2 class="services-main-title">Engineering Services</h2>
+                <p class="services-subtitle">Comprehensive solutions for complex engineering challenges</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="glass-card">
+                    <div class="glass-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="glass-card-title">Structural Design</h3>
+                    <p class="glass-card-description">Advanced structural engineering solutions for commercial, residential, and industrial projects with cutting-edge design methodologies.</p>
+                </div>
+                
+                <div class="glass-card">
+                    <div class="glass-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3 class="glass-card-title">Project Supervision</h3>
+                    <p class="glass-card-description">Comprehensive project management and supervision ensuring quality, timeline adherence, and safety compliance throughout construction.</p>
+                </div>
+                
+                <div class="glass-card">
+                    <div class="glass-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="glass-card-title">Engineering Consultation</h3>
+                    <p class="glass-card-description">Expert consultation services for complex engineering challenges, feasibility studies, and technical advisory for innovative projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Team</h2>
+                <p class="section-subtitle">Exceptional engineers driving innovation and excellence</p>
+            </div>
+            
+            <div class="team-scroll-container">
+                <div class="team-cards">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="John Anderson" loading="lazy">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">John Anderson</h3>
+                            <p class="team-position">Principal Engineer</p>
+                            <p class="team-description">25+ years of structural engineering excellence with expertise in high-rise and complex architectural projects.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Sarah Mitchell" loading="lazy">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Sarah Mitchell</h3>
+                            <p class="team-position">Senior Project Manager</p>
+                            <p class="team-description">Expert in project supervision and quality assurance with a track record of delivering projects on time and within budget.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Michael Chen" loading="lazy">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Michael Chen</h3>
+                            <p class="team-position">Lead Structural Engineer</p>
+                            <p class="team-description">Specializes in innovative structural solutions and sustainable engineering practices for modern construction challenges.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Emily Rodriguez" loading="lazy">
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Emily Rodriguez</h3>
+                            <p class="team-position">Design Engineer</p>
+                            <p class="team-description">Creative problem-solver with expertise in CAD design and structural analysis for residential and commercial projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="contact-title">Start Your Project</h2>
+                    <p class="contact-subtitle">Ready to bring your vision to life? Let's discuss how we can engineer excellence together.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Office Location</h4>
+                                <p>123 Engineering Plaza<br>Metropolitan City, MC 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>info@assetcoreengineering.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Full Name</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="structural-design">Structural Design</option>
+                                <option value="project-supervision">Project Supervision</option>
+                                <option value="engineering-consultation">Engineering Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label for="service">Service Required</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Project Details</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">
+                            <span>Send Message</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Assetcore Engineering" class="footer-logo">
+                    <h3>Assetcore Engineering</h3>
+                    <p>Engineering Prestige. Delivering Excellence.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Structural Design</a></li>
+                            <li><a href="#services">Project Supervision</a></li>
+                            <li><a href="#services">Engineering Consultation</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Assetcore Engineering. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                    <div class="modal-details">
+                        <div class="detail-item">
+                            <strong>Project Type:</strong>
+                            <span id="modalType"></span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Duration:</strong>
+                            <span id="modalDuration"></span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Status:</strong>
+                            <span id="modalStatus"></span>
+                        </div>
+                    </div>
+                    <button class="modal-cta">Discuss Similar Project</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
                 <div class="car-card">
                     <div class="car-image">
                         <img src="aston-martin-db11.jpg" alt="2022 Aston Martin DB11" loading="lazy">
