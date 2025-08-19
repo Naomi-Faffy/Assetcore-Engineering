@@ -218,17 +218,12 @@ body::before {
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    min-width: 0;
-    overflow: visible;
 }
 
 .nav-logo {
     display: flex;
     align-items: center;
-    min-width: 280px;
-    flex-shrink: 0;
-    flex-grow: 0;
-    overflow: visible;
+    gap: 15px;
 }
 
 .nav-logo img {
@@ -247,19 +242,12 @@ body::before {
     background-clip: text;
     letter-spacing: -0.02em;
     text-shadow: 0 3px 15px rgba(46, 125, 50, 0.4);
-    white-space: nowrap;
-    overflow: visible;
-    display: block;
-    width: auto;
-    min-width: max-content;
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
     gap: 40px;
-    flex-shrink: 1;
-    min-width: 0;
 }
 
 .nav-menu a {
@@ -391,9 +379,10 @@ body::before {
 .hero-content {
     text-align: center;
     color: var(--text-light);
-    max-width: 800px;
-    padding: 160px 20px 0 20px;
+    max-width: 1000px;
+    padding: 160px 40px 0 40px;
     animation: fadeInUp 1.2s ease-out;
+    overflow: visible;
 }
 
 @keyframes fadeInUp {
@@ -409,11 +398,11 @@ body::before {
 
 .hero-title {
     font-family: var(--font-serif);
-    font-size: clamp(4rem, 12vw, 8rem);
+    font-size: clamp(3.5rem, 10vw, 7rem);
     font-weight: 900;
-    line-height: 1.0;
+    line-height: 1.1;
     margin-bottom: 40px;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
     color: var(--pure-white);
     text-shadow: 
         0 8px 40px rgba(0, 0, 0, 0.9),
@@ -425,11 +414,14 @@ body::before {
         drop-shadow(0 0 30px rgba(46, 125, 50, 0.4));
     text-stroke: 2px rgba(255, 255, 255, 0.1);
     -webkit-text-stroke: 2px rgba(255, 255, 255, 0.1);
+    overflow: visible;
 }
 
 .hero-line-1, .hero-line-2 {
     display: block;
     animation: slideInLeft 1s ease-out;
+    overflow: visible;
+    white-space: nowrap;
 }
 
 .hero-line-2 {
@@ -1832,7 +1824,11 @@ body::before {
     }
     
     .hero-title {
-        font-size: 3rem;
+        font-size: 2.8rem;
+    }
+    
+    .hero-line-1, .hero-line-2 {
+        white-space: normal;
     }
     
     .hero-buttons {
