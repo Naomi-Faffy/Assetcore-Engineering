@@ -628,6 +628,16 @@ body::before {
     position: relative;
 }
 
+.project-card:nth-child(2n) {
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.25);
+}
+
+.project-card:nth-child(2n):hover {
+    border-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 40px 120px rgba(0, 0, 0, 0.35);
+}
+
 .project-card::before {
     content: '';
     position: absolute;
@@ -729,6 +739,21 @@ body::before {
     margin-bottom: 20px;
     opacity: 0.9;
     text-shadow: 0 1px 8px rgba(107, 156, 79, 0.3);
+}
+
+.project-card:nth-child(2n) .project-title {
+    color: var(--charcoal-black);
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:nth-child(2n) .project-description {
+    color: var(--charcoal-black);
+    opacity: 0.8;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .project-action {
