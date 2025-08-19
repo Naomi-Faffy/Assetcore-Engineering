@@ -582,10 +582,16 @@ body::before {
 
 .section-subtitle {
     font-size: 1.1rem;
-    color: var(--sage-green);
+    color: var(--charcoal-black);
     max-width: 600px;
     margin: 0 auto;
-    opacity: 0.9;
+    opacity: 0.8;
+    font-weight: 500;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.section-subtitle.green-subtitle {
+    color: var(--sage-green);
     text-shadow: 0 2px 10px rgba(107, 156, 79, 0.3);
 }
 
@@ -1398,15 +1404,16 @@ body::before {
     position: absolute;
     top: 15px;
     left: 12px;
-    color: var(--sage-green);
+    color: var(--charcoal-black);
     font-size: 1rem;
+    font-weight: 600;
     transition: var(--smooth-transition);
     pointer-events: none;
-    background: var(--glass-sage-light);
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding: 0 8px;
-    text-shadow: 0 1px 5px rgba(107, 156, 79, 0.3);
+    text-shadow: none;
 }
 
 .form-group input:focus + label,
