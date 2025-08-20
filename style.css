@@ -377,7 +377,7 @@ body::before {
     text-align: center;
     color: #000000;
     max-width: 1000px;
-    padding: 160px 40px 0 40px;
+    padding: 0 40px; /* remove top offset to allow perfect centering */
     animation: fadeInUp 1.2s ease-out;
     overflow: visible;
 }
