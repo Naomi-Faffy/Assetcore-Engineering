@@ -2028,11 +2028,14 @@ body::before {
 }
 
 .hero-content {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 2;
     text-align: center;
-    max-width: 800px;
-    padding: 0 40px;
+    width: min(100%, 1100px);
+    padding: 0 24px;
 }
 
 .hero-buttons {
@@ -3491,7 +3494,12 @@ body::before {
 
 @media (max-width: 480px) {
     .hero-content {
-        padding: 140px 20px 0 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 20px; /* keep centered on small screens */
+        width: 100%;
     }
     
     .section-title {
