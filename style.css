@@ -672,6 +672,12 @@ body::before {
     filter: drop-shadow(0 0 30px rgba(139, 195, 74, 0.4));
 }
 
+@media (max-width: 768px) {
+    .project-card {
+        max-width: 100%;
+    }
+}
+
 .project-image {
     position: relative;
     height: 300px;
@@ -1235,6 +1241,12 @@ body::before {
     filter: drop-shadow(0 0 20px rgba(139, 195, 74, 0.3));
 }
 
+@media (max-width: 768px) {
+    .team-card {
+        min-width: 280px;
+    }
+}
+
 .team-image {
     height: 300px;
     overflow: hidden;
@@ -1700,6 +1712,16 @@ body::before {
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 500px;
+}
+
+@media (max-width: 768px) {
+    .modal-body {
+        grid-template-columns: 1fr;
+    }
+    
+    .modal-image {
+        height: 250px;
+    }
 }
 
 .modal-image {
