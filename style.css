@@ -375,7 +375,7 @@ body::before {
 
 .hero-content {
     text-align: center;
-    color: var(--text-light);
+    color: #000000;
     max-width: 1000px;
     padding: 160px 40px 0 40px;
     animation: fadeInUp 1.2s ease-out;
@@ -2028,37 +2028,6 @@ body::before {
     text-align: center;
     max-width: 800px;
     padding: 0 40px;
-}
-
-.hero-title {
-    font-family: var(--font-serif);
-    font-size: clamp(3rem, 8vw, 6rem);
-    font-weight: 700;
-    color: var(--pearl-white);
-    margin-bottom: 30px;
-    line-height: 1.1;
-}
-
-.hero-line-1 {
-    display: block;
-    opacity: 0;
-    animation: fadeInUp 1s ease 0.5s forwards;
-}
-
-.hero-line-2 {
-    display: block;
-    color: var(--exquisite-green);
-    opacity: 0;
-    animation: fadeInUp 1s ease 1s forwards;
-}
-
-.hero-subtitle {
-    font-size: 20px;
-    color: var(--cool-white);
-    margin-bottom: 50px;
-    font-weight: 300;
-    opacity: 0;
-    animation: fadeInUp 1s ease 1.5s forwards;
 }
 
 .hero-buttons {
