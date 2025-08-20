@@ -377,7 +377,7 @@ function initLoadingAnimations() {
     if (heroContent) {
         setTimeout(() => {
             heroContent.style.opacity = '1';
-            heroContent.style.transform = 'translateY(0)';
+            heroContent.style.transform = 'translate(-50%, 0)';
         }, 300);
     }
     
