@@ -304,9 +304,8 @@ body::before {
 .hero {
     position: relative;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid; /* simpler centering */
+    place-items: center; /* centers children both axes */
     overflow: hidden;
 }
 
@@ -382,7 +381,7 @@ body::before {
     color: #000000;
     width: min(100%, 1100px);
     padding: 0 24px;
-    animation: fadeInUp 1.2s ease-out;
+    /* Removed transform-based animation to preserve centering */
     overflow: visible;
     z-index: 2;
 }
@@ -1997,9 +1996,8 @@ body::before {
 .hero {
     position: relative;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid; /* simpler centering */
+    place-items: center; /* centers children both axes */
     overflow: hidden;
 }
 
