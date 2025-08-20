@@ -374,12 +374,17 @@ body::before {
 }
 
 .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     color: #000000;
-    max-width: 1000px;
-    padding: 0 40px; /* remove top offset to allow perfect centering */
+    width: min(100%, 1100px);
+    padding: 0 24px;
     animation: fadeInUp 1.2s ease-out;
     overflow: visible;
+    z-index: 2;
 }
 
 @keyframes fadeInUp {
@@ -409,10 +414,10 @@ body::before {
 }
 
 .hero-line-1, .hero-line-2 {
-    display: block;
+    display: inline;
     animation: slideInLeft 1s ease-out;
     overflow: visible;
-    white-space: nowrap;
+    white-space: normal; /* allow wrapping to avoid visual right-lean */
 }
 
 .hero-line-2 {
